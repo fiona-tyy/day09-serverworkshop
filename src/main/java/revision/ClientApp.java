@@ -43,6 +43,10 @@ public class ClientApp {
 
                     msgRecv = dis.readUTF();
                     System.out.println("From server: " + msgRecv);
+
+                    if(msgRecv.contains("right")){
+                        break;
+                    }
                 }
 
                 dos.close();

@@ -60,6 +60,7 @@ public final class App{
                 dos.writeUTF("Your guess is too high");
             } else {
                 dos.writeUTF("You have guessed it right!");
+                break;
             }
             // flush to ensure records are written and sent across the socket
             dos.flush();

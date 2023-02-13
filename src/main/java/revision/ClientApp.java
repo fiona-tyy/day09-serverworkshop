@@ -49,18 +49,18 @@ public class ClientApp {
                     }
                 }
 
-                dos.close();
-                bos.close();
-                os.close();
                 dis.close();
                 bis.close();
                 is.close();
-                socket.close();
-
+                
             } catch (EOFException e){
                 e.printStackTrace();
                 socket.close();
             }
+            dos.close();
+            bos.close();
+            os.close();
+            socket.close();
             
         } catch (EOFException e) {
             e.printStackTrace();
